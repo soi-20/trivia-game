@@ -23,9 +23,11 @@ function App() {
 	}, []);
 
 	const startGame = () => {
-		fetch(query)
-			.then((res) => res.json())
-			.then((data) => setQuestions(data.results));
+		if (query !== "https://opentdb.com/api.php?amount=10") {
+			fetch(query)
+				.then((res) => res.json())
+				.then((data) => setQuestions(data.results));
+		}
 	};
 
 	return (
