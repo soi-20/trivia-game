@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from "react-html-parser";
+import ReactHtmlParser from "react-html-parser";
 
 import "./Quiz.css";
 
