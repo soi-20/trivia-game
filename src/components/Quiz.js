@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import ReactHtmlParser from "react-html-parser";
 
 import "./Quiz.css";
